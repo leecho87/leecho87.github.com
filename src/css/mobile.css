@@ -50,6 +50,9 @@
 .work__item-thumb {
     height:auto;
 }
+..work__item-name {
+    height:35px
+}
 .work__item-link:hover:after {
     display:none !important
 }
