@@ -51,6 +51,7 @@
     height:auto;
 }
 .work__item-name {
+    box-sizing:border-box;
     height:35px
 }
 .work__item-link:hover:after {
