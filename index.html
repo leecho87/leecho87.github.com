@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>UI developer - leecho</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./src/image/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./src/image/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./src/image/favicon-16x16.png">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/css/mobile.css" media="screen and (max-width:720px)">
+    <script src="./src/js/jQuery.js"></script>
+    <script src="./src/js/handlebars.js"></script>
+    <script src="./src/js/index.js" defer></script>
+</head>
+<body>
+<!-- header -->
+<header class="header-wrapper">
+    <h1 class="header__title">
+        <a href="#" class="header__title-link">
+            <span class="header__logo">CH</span>
+            <span class="header__text">
+                <strong class="header__text-name">LEECHO</strong>
+                <span class="header__text-job">UI developer</span>
+            </span>
+        </a>
+    </h1>
+    <a href="#" class="header__mobile"><span class="header__mobile-line">메뉴토글</span></a>
+    <ul class="header__menu">
+        <li class="header__menu-item"><a href="#" class="header__menu-link" data-id="0">ABOUT</a></li>
+        <li class="header__menu-item"><a href="#" class="header__menu-link" data-id="1">PORTFOLIO</a></li>
+        <li class="header__menu-item"><a href="#" class="header__menu-link" data-id="2">THINK</a></li>
+        <li class="header__menu-item"><a href="#" class="header__menu-link" data-id="3">INFOMATION</a></li>
+    </ul>
+</header>
+<!-- //header -->
+
+<!-- container -->
+<section class="container">
+    <h1 class="hide">UI developer 이창호를 소개합니다.</h1>
+    <!-- ui developer -->
+    <article class="introduce introduce--UI">
+        <h1 class="dev__title">UI developer</h1>
+        <ul class="dev__list">
+            <li class="dev__item">
+                <strong class="dev__item-name">&lt; / &gt;<br>HTML</strong>
+                <p class="dev__item-comment">웹의 뼈대를 구축합니다.<br>견고하고 정확한 뼈대는 다양한 사용자에게<br>정확한 정보를 전달합니다.</p>
+            </li>
+            <li class="dev__item">
+                <strong class="dev__item-name">{ .. }<br>CSS</strong>
+                <p class="dev__item-comment">CrossBrowsing을 기본으로, 사용자에게<br>의도한 디자인에 맞는 모습과<br>풍부한 시각효과를 제공합니다.</p>
+            </li>
+            <li class="dev__item">
+                <strong class="dev__item-name">{ ; }<br>Javascript</strong>
+                <p class="dev__item-comment">UI를 위한 자바스크립트는 사용자에게 웹사이트가<br>더욱 더 재미있고 풍부한 경험으로<br>닿을수 있도록 도와줍니다.</p>
+            </li>
+        </ul>
+        <a href="#" class="dev__project-button">Project View<br><span class="introduce__bullet introduce__bullet--arrow"></span></a>
+    </article>
+    <!-- //ui developer -->
+
+    <!-- work -->
+    <article class="introduce introduce--work">
+        <h1 class="hide">작업했던 목록입니다.</h1>
+        <ul class="work__list">
+            <script id="work-template" type="text/x-handlebars-template">
+            {{#each workList}}
+            <li class="work__item">
+                <a href="{{pageUrl}}" target="_blank" class="work__item-link">
+                    <img src="{{thumb}}" class="work__item-thumb">
+                    <span class="work__item-name">{{name}}</span>
+                    <span class="work__item-textbox">
+                        <span class="work__item-text">{{description}}</span>
+                    </span>
+                </a>
+            </li>
+            {{/each}}
+            </script>
+        </ul>
+    </article>
+    <!-- //work -->
+
+    <article class="introduce introduce--history">
+        <h1 class="hide">소개합니다.</h1>
+        <div class="history__inner">
+            <h2 class="history__comment-head">&lt; UI developer &gt;</h2>
+            <p class="history__comment-short">
+                <strong>"</strong>사용자에게 정확한 정보와 디자인에 맞는 사이트를 제공하고<br>javascript로 풍부한 경험을 제공한다.<strong>"</strong>
+            </p>
+            <p class="history__comment-text">
+                안녕하세요! 다양한 서비스를 만들며 보람과 재미를 느끼는 UI개발자 이창호라고 합니다.<br>
+                저에게 웹은 매우 사소한 것이였습니다.<br>
+                웹이 어떻게 만들어지는지에 대해 들으며 마치 어릴적 레고를 만들며 즐거워했던 그 때가 떠오르며 흥미를 느끼게 되었고,<br>
+                다양한 방법으로 화면에 무궁무진하게 표현할 수 있는 웹에 흠뻑 빠지게 되었습니다.<br>
+                알면 알 수록, 웹은 계속 큰 매력을 발산했고, 저는 공부할 수록 빠져드는 자신의 모습을 볼 수 있었습니다.<br>
+                재미있는 것을 직업으로 삼을 수 있다는 점은 정말 너무나 큰 행운이라고 생각합니다.<br>
+                제가 앞으로 지내면서 가장 앞 선 기술력을 배우며 일하고 싶습니다.<br>
+                그리하여, 시간이 지난 후에는 다른 사람도 저에게 배울 것이 많은 개발자로 거듭나고 싶습니다.<br>
+                만드는 재미를 알기에, 항상 최선의 기술력을 가지고 개발할 수 있는 인재로 거듭나고 싶습니다.
+            </p>
+            <div class="history__listbox">
+                <dl class="history__list history__list--edu">
+                    <dt class="history__title">Education</dt>
+                    <dd class="history__description">
+                        <!--&middot;--> 2018년 서울사이버대학교 컴퓨터공학과 졸업하였습니다.<br>
+                        <!--&middot;--> 2010년 GG전국디자인공모전에서 시각&middot;정보부문에서 특선을 수상하였습니다.<br>
+                        <!--&middot;--> 2005년 인헌고등학교 졸업하였습니다.
+                    </dd>
+                </dl>
+                <dl class="history__list history__list--etc">
+                    <dt class="history__title">Etc</dt>
+                    <dd class="history__description">
+                        <!-- &middot; 2002년 라이트급 프로복서로 활동 하였습니다.<br> -->
+                        <!--&middot;--> 2013년 INTLAB 퍼블리셔로 업무를 하며 다양한 공공기관 프로젝트에 참여하였습니다.<br>
+                        <!--&middot;--> 2013년 하안복지센터에서 봉사활동을 다녔습니다.<br>
+                        <!--&middot;--> 2014년 알바천국 UI개발자로 이직하여 2018년 현재까지 HR서비스를 경험하였습니다.<br>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+    </article>
+</section>
+<!-- //container -->
+
+<!-- footer -->
+<footer class="footer-wrapper">
+    <article class="introduce introduce--infomation">
+        <div class="infomation">
+            <div class="infomation__picture"><img src="./src/image/favicon-96x96.png" alt="LEECHO"></div>
+            <p class="infomation__text">
+                안녕하세요. 이창호입니다.<br>
+                다양한 것에 관심과 흥미가 많습니다<br>
+                재밌고 다양한 서비스와 기술을 접하고<br>
+                어릴때 레고를 만지고 놀던 때처럼 즐겁게 웹을 만들며 <br>
+                뿌듯함과 보람을 느끼는 개발자가 되고 싶습니다.
+            </p>
+        </div>
+        <div class="infomation-list-wrapper">
+            <dl class="infomation__description-list">
+                <dt class="infomation__description-title"><img src="./src/image/icon_address.png" alt="" class="infomation__description-icon">address</dt>
+                <dd class="infomation__description-text"><address>서울시 관악구 행운동</address></dd>
+            </dl>
+            <dl class="infomation__description-list">
+                <dt class="infomation__description-title"><img src="./src/image/icon_mail.png" alt="" class="infomation__description-icon">e-mail</dt>
+                <dd class="infomation__description-text">leecho87@naver.com<br>leecho87@gmail.com</dd>
+            </dl>
+            <dl class="infomation__description-list">
+                <dt class="infomation__description-title"><img src="./src/image/icon_phone.png" alt="" class="infomation__description-icon">phone</dt>
+                <dd class="infomation__description-text">010-6221-3432</dd>
+            </dl>
+        </div>
+    </article>
+    <p class="footer__copyright">copyright &copy; 2018 <strong>LEECHO</strong> All Right Reserved.</p>
+</footer>
+<!-- //footer -->
+</body>
+</html>
