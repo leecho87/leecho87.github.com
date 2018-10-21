@@ -7,6 +7,22 @@
 .header__title {
     padding-left:20px
 }
+.header__title-link {
+    display:table
+}
+.header__logo {
+    float:none;
+    display:table-cell;
+    margin:0;
+    vertical-align:middle;
+    line-height:normal;
+}
+.header__text {
+    float:none;
+    display:table-cell;
+    padding:0 0 0 12px;
+    vertical-align:middle
+}
 .header__menu {
     display:none;
     position:static;
