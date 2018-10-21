@@ -6,7 +6,7 @@
     }
     if (!Handlebars) {
         alert('오류가 발생했습니다.');
-        throw new Error('"handlebars" is required'); // jQuery 가 없음을 오류로 알림
+        throw new Error('"handlebars" is required'); // Handlebars 가 없음을 오류로 알림
     }
 
     var projectViewButton = $('.dev__project-button');
