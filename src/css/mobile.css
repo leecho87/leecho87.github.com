@@ -65,7 +65,7 @@
     margin-top:0
 }
 .work__item-thumb {
-    height:auto;
+    height:100%;
 }
 .work__item-name {
     box-sizing:border-box;
