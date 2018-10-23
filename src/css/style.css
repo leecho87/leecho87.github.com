@@ -294,6 +294,7 @@ a {
 }
 .work__item-link {
     display:block;
+    overflow:hidden;
     height:100%
 }
 .work__item-thumb {
