@@ -275,14 +275,22 @@ a {
     line-height:26px
 }
 .work__list {
-    overflow:hidden
+    overflow:hidden;
+    padding:0 1%;
 }
 .work__item {
     float:left;
     position:relative;
     overflow:hidden;
-    width:33.33%;
+    box-sizing:border-box;
+    width:32.33%;
     height:300px;
+    margin:20px 0 0 1.5%;
+    padding:2px;
+    border:1px solid #fff;
+}
+.work__item:nth-child(3n+1) {
+    margin-left:0
 }
 .work__item-link {
     display:block;
