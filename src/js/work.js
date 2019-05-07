@@ -1,4 +1,4 @@
-{
+var work = {
     "workList" : [
         // {
         //     "name": "알바천국 MO Gulp(sass,uglify) 도입중",

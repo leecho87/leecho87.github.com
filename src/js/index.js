@@ -40,15 +40,6 @@
     var workListField = $('.work__list');
     var workListSource = $('#work-template').html();
     var workTemplate = Handlebars.compile(workListSource);
-    $.ajax({
-        dataType : 'json',
-        url : '/src/js/work.js',
-        success : function(data){
-            var template = workTemplate(data);
-            workListField.html(template);
-        },
-        error : function(err){
-            console.log(err);
-        }
-    });
+    var template = workTemplate(work);
+    workListField.html(template);
 })(jQuery,Handlebars);
