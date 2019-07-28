@@ -1,6 +1,20 @@
 {
     "workList" : [
         {
+            "name": "모바일 전면개편",
+            "participation": "100%",
+            "description": "모바일 사이트의 UI/UX의 개선을 위한 서비스들의 전면 개편 (html5/css3/jQuery)",
+            "thumb": "/src/image/thumb19_04.png",
+            "pageUrl": "http://m.alba.co.kr/"
+        },
+        {
+            "name": "알바천국 PC 상품선택 개편",
+            "participation": "100%",
+            "description": "상품에 대한 정보의 불편함으로 인해 UI/UX의 개선를 위한 서비스들의 전면 개편 (html5/css3/jQuery)",
+            "thumb": "/src/image/thumb19_02.png",
+            "pageUrl": "http://www.alba.co.kr/biz/job/GoodsSelect.asp"
+        },
+        {
             "name": "천국의알바 PC/MO 신규 구축",
             "participation": "100%",
             "description": "사이트 노후로 인한 전체개편, 주타겟이 젊은층으로 다양한 효과 제공 (html5/css3/jQuery)",
